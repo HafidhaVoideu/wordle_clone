@@ -1,0 +1,64 @@
+:root {
+    --color-primary: #121212;
+    --color-secondary: #519872;
+    --color-teritiary: #e7d105;
+    --color-font: #ffffff;
+    --color-blue: #81c6e8;
+    --color-green: #5fd068;
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+    --color-grey-dark-4: #3c4048;
+
+    --shadow-box: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --line: solid 0.5px #333;
+}
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;100&family=Oswald:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 35%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (min-width: $bp-smallest) {
+        font-size: 45%;
+    }
+    @media only screen and (min-width: $bp-small) {
+        // font-size: 55%;
+        font-size: 62.5%;
+    }
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-light-1);
+}

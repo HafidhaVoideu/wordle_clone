@@ -283,7 +283,7 @@
   text-transform: uppercase;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 900px) {
     width: 7rem;
     height: 7rem;
   }
@@ -315,7 +315,7 @@
   background-color: var(--color-grey-dark-1);
 
   @media screen and (max-width: 1024px) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   &:hover {

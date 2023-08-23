@@ -83,11 +83,15 @@ const AppProvider = ({ children }) => {
   // **************** WordGrid Functions ***************
 
   const enterLetter = (letter) => {
-    setLetter({ ...letter, char: letter });
+    setTimeout(() => {
+      setLetter({ ...letter, char: letter });
+    }, 100);
   };
 
   const deleteLetter = () => {
-    setLetter({ ...letter, char: "" });
+    setTimeout(() => {
+      setLetter({ ...letter, char: "" });
+    }, 100);
   };
 
   const enterWord = () => {

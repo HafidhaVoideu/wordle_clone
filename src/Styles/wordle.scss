@@ -54,7 +54,7 @@
   @include FlexColumn();
   position: relative;
   background-color: var(--color-primary);
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   // overflow: hidden;
 }
@@ -252,7 +252,7 @@
 
 .gameContainer {
   @include FlexColumn();
-  // padding-top: 10vh;
+
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
@@ -283,9 +283,9 @@
   text-transform: uppercase;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
-  @media screen and (max-width: 500px) {
-    width: 5rem;
-    height: 5rem;
+  @media screen and (max-width: 1024px) {
+    width: 7rem;
+    height: 7rem;
   }
 }
 
@@ -312,8 +312,11 @@
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--color-font);
-
   background-color: var(--color-grey-dark-1);
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 
   &:hover {
     background-color: rgb(196, 32, 32);
@@ -721,8 +724,10 @@ input:checked + .slider:before {
 
 .error {
   position: absolute;
-  top: 7vh;
-  left: 43.5%;
+  top: 8vh;
+
+  left: 50%;
+  transform: translate(-50%, 0);
   background-color: var(--color-font);
   padding: 1rem;
   font-size: 1.3rem;

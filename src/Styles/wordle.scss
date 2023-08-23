@@ -110,7 +110,7 @@
   position: absolute;
   top: 8vh;
   height: 92vh;
-  z-index: 999;
+  z-index: 55;
   background-color: var(--color-primary);
   border-right: var(--line);
   box-shadow: var(--shadow-box);
@@ -448,6 +448,7 @@
 
 .statsPanel {
   @include Popup();
+  z-index: 999;
 
   &__link {
     font-weight: 200;
@@ -713,7 +714,7 @@ input:checked + .slider:before {
 
 .modal {
   position: absolute;
-  z-index: 55;
+  z-index: 99;
   height: 100vh;
   width: 100vw;
   background-color: black;

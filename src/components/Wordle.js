@@ -9,7 +9,11 @@ import { Questions } from './Questions';
 import { Modal } from './Modal';
 import { Error } from './Error';
 import { Result } from './Result';
+
+import { useGlobalContext } from '../context';
 export const Wordle = () => {
+
+
   return (
     <div className='container'>
       <Header />
